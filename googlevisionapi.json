@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bold-airlock-256012",
+  "private_key_id": "e321b1c62cc956a7f8d2495e71fe20530ea198e1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLglwlRVKxkbCt\nY7mbET4Bar346DQOb5P6NCiRBOt5vYrmidYSllsD6kwLSZr1w9XLD9mNv+hTC9Kl\nGTlJS437CqjzV3DjWQ3bfh4asFLLOhNOwMZzuBTiVxJgP7T+2hwlPIFE5eOb5/Ji\nrDiuI0YHlonUtIQuSWaRqqAz6b0lErOc3TBJVEuq/JIt8iEtpo2js/XTcG0d1apr\nWgP8mik6GSQjNYk2ozUH6FKU77qTSwE1NXHdo6zdG0iq6KV6bT03URLAR+QWzPhg\nZFjxO8VD2xgL/35swV/nEVvu8tihjTdDd9AeaNr5kdySFdgavDCEH6A+y/O8oUyM\ntL+/vbjPAgMBAAECggEAN3Yg76VbWno2eKJ/cEO8Lr2s5Ts/CJoe7WaukYsSM3zU\n8GwrE6i3SDNfowndudGzn6IDq65bvdowf38GzjNRj9OBZMP1R3g7HxDZWnOoNKtw\nnJtL2jiWNHL/Voy2ImhFmF5Lan/uTkxhkcOWtNp3GNVNXdMOXODzG4qxG0S9n+7i\nhk+GJmLk4N3frKunL4zxPQD0KIcBpt7UlC2ACTbmo7FjzTijJ+V4KS8yeV1hrGpT\nVFnPzji5usf4t4YK4Wg6YVgjMQ8CHoBoIVPvHDMVFchE7BUgheudcoYUmZtiYhqg\n4OA8Ju8WBA6pSN52TD/BJYqPoya6LNNNiVTo2KqvqQKBgQD3Qo12sj/i9BdkSzsb\ns1+mPu+pAS1rjO3GfZCi4CQPBzgC4suBtOb5Dn0KWRDAQtYCA0o7EbObSk326nQG\nvxu9uxvH4/gGokHOjqW0MKX2Glt47dAYtjKCWYYgnU+XEXrKT3FCMuBuM2Un1Kiq\n+KjBYYbB10glJTXxVy5ZlwzbeQKBgQDSs+iBFRcg6kifhPhtI+5pv6bK6zpeI7Nc\nCOAdtoCVAygAQTe8StKWFBLqQbTsXvKwc9QXmYbvPr3RYfz5YigOaKDtiJwZ8uYD\nXBTo0bmd7dwXBnomsjEMdr07Tx2DHcctDidR5ZwenNA3KIOkMI8YoSDq/j0acUzd\nOX0qdarchwKBgGAgwKy/2fSbHyj/0ogPcYVJfJVA/u6MSLjdgkjASWSKUu1UTPgt\nY4q6ZkSKoeeNVHRN4SMb267o8Wyoc9lXnSpjPwa0i23Q0TLD5IosS6llT+Cw3DFv\nTC2/LlUps5Kw2gMjZY3uB7DwTEhy9ewaZklgaCqeTs8aK2Gbmkp8XiRJAoGBAJmm\n+PapGqS2NR+fKEru2P3k9Q0lXPsprbKABm+kl0ATfSgyZyK4rbkkCmcqY3W8B98F\nmLVdEDmH14TJoGF8Yxme0zxlUvDZYUMx802VI3c37jgcURfG+l3MeVK27x6eqJEC\nsUnX13G7iVuv/8/MWY3scsTrgkO2PAdX1R8Rj/ghAoGAGKj9ChsnO/iaZcutxzpI\nLTfVBIHJJFEX8g3n9RZ4po9aZELphUWa5QLIRWhSQuNewo5F8K8beKrvRLbBLM12\nCymZpL0YQKVC1do2PbYGpc7Hgqot2niQvibBXaltMFCZ++Mrle8/sdP63l+hGyTv\nBQByQfAafefCFVSssDHAh/A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "aasha-visionapi@bold-airlock-256012.iam.gserviceaccount.com",
+  "client_id": "115871299369042755594",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aasha-visionapi%40bold-airlock-256012.iam.gserviceaccount.com"
+}
