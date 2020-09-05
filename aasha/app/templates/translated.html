@@ -13,17 +13,29 @@
     <link rel="stylesheet" href={% static 'fonts/font-awesome.min.css' %}>
     <link rel="stylesheet" href={% static 'fonts/simple-line-icons.min.css' %}>
     <link rel="stylesheet" href={% static "css/untitled.css" %}>
+    <style>
+        .scroll {
+  background-color:white !important;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) !important;
+  }
+
+  .headA:hover{
+      color:#ff9173 !important;
+      font-weight: bold !important;
+  }
+
+    </style>
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="height: 75px;">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><br>आशा (Hope)<br></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top newNav" id="mainNav" style="height: 75px;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger headA" href="#page-top"><br>आशा (Hope)<br><br></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div
                 class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#download">Download</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#demo">Demo</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger headA" href="#download">Download</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger headA" href="#features">Features</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger headA" href="#demo">Demo</a></li>
                 </ul>
         </div>
         </div>
@@ -113,8 +125,7 @@
     </section>
     <section id='demo' style="background-color: #ffe7d6;background: linear-gradient(#ffe7d6,#ff9173);">
         <h1 style="height: 48px;text-align: center;">Demo our Product !</h1>
-
-        <p>{{ transtext }}</p>
+        {{ transtext }}
         
     </section>
     <footer>
@@ -127,6 +138,17 @@
     <script src={% static 'bootstrap/js/bootstrap.min.js' %}></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src={% static 'js/stylish-portfolio.js' %}></script>
+    <script>
+        var myNav = document.getElementById("mainNav");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop >= 28 || document.documentElement.scrollTop >= 28){
+                myNav.classList.add("scroll");
+            } else {
+                myNav.classList.remove("scroll");
+            }
+        };
+    </script>
 </body>
 
 </html>
