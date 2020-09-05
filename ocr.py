@@ -34,6 +34,8 @@ out_below = pytesseract.image_to_string(img)
 print("OUTPUT:", out_below)'''
 
 import requests
+import json
+from json import JSONEncoder
 
 
 def ocr_space_file(filename, overlay=False, api_key='c934bdeda988957', language='eng'):
@@ -88,5 +90,7 @@ def ocr_space_url(url, overlay=False, api_key='c934bdeda988957', language='eng')
 
 
 # Use examples:
-test_file = ocr_space_file(filename='test/test2.PNG', language='pol')
+test_file = ocr_space_file(filename='test/test4.PNG', language='pol')
+json=json.loads(test_file)
+print(json["ParsedResults"][0]["ParsedText"])
 #test_url = ocr_space_url(url='http://i.imgur.com/31d5L5y.jpg')
