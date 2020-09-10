@@ -6,42 +6,35 @@ import requests
 import json
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
-from .models import Image
-# Create your views here.
 
 
-
-def ocr_space_file(filename, overlay=False, api_key='c934bdeda988957', language='eng'):
-    payload = {'isOverlayRequired': overlay,
+def ocr_space_url(url, overlay=False, api_key='c934bdeda988957', language='eng'):
+    payload = {'url': url,
+               'isOverlayRequired': overlay,
                'apikey': api_key,
                'language': language,
                }
-    with open(filename, 'rb') as f:
-        r = requests.post('https://api.ocr.space/parse/image',
-                            files={filename: f},
-                            data=payload,
-                            )
+    r = requests.post('https://api.ocr.space/parse/image',
+                      data=payload,
+                      )
     return r.content.decode()
-
-def handle_uploaded_file(f):
-    with open('some/file/name.txt', 'wb+') as destination:
-        for chunk in f.chunks():
-            destination.write(chunk)
 
 
 def home(request):
     form=TranslationText()
     if request.method=='POST':
-        form = TranslationText(request.POST,request.FILES)
+        form = TranslationText(request.POST)
         transtext='Sample Text'
         if form.is_valid():
-            img=request.FILES['file']
-            fs = FileSystemStorage()
-            filename = fs.save(img.name, img)
-            uploaded_file_url = fs.url(filename)
+            # img=request.FILES['file']
+            # fs = FileSystemStorage()
+            # filename = fs.save(img.name, img)
+            # uploaded_file_url = fs.url(filename)
+            imgurl=form.cleaned_data['file']
             lang = form.cleaned_data['lang']
-            test_file = ocr_space_file('D:/GHCICodeathon/aasha'+ uploaded_file_url, language='pol')
-            json1=json.loads(test_file)
+            # test_file = ocr_space_file('D:/GHCICodeathon/aasha'+ uploaded_file_url, language='pol')
+            test_url = ocr_space_url(url=imgurl)
+            json1=json.loads(test_url)
             json1=json1["ParsedResults"][0]["ParsedText"]
 
             t=Translator()
